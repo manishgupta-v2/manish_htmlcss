@@ -1,0 +1,79 @@
+
+       * {  
+            box-sizing: border-box !important;
+            width: 100%;
+        }
+
+        .articles {
+            display: block;
+            border-right: 1px solid rgb(213, 218, 213);
+            float: left;
+            width: 15%;
+            padding: 0px 10px 0px 10px;
+            margin: 4px 0px;
+        }
+
+        .date {
+            color: #646464;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .title {
+            color: rgb(66, 66, 66);
+            font-family: 'flanders';
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        h1 {
+            color: rgb(34, 34, 34);
+            font-family: 'flanders';
+            text-indent: 50px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            padding: 10px 0px 10px 0px;
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+            width: 9em;
+        }
+
+
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .news .articles {
+             background-color: white;
+         
+        }
+
+        img{
+            width: 11em;
+            height: 11em;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .articles {
+                width: 33%;
+            }
+
+        }
+
+        @media only screen and (max-width: 620px) {
+            .articles {
+                width: 50%;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .articles {
+                width: 100%;
+                border-right: none;
+            }
+        }
