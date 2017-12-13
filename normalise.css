@@ -1,5 +1,6 @@
-   * {
-            box-sizing: border-box;
+
+       * {  
+            box-sizing: border-box !important;
             width: 100%;
         }
 
@@ -7,8 +8,9 @@
             display: block;
             border-right: 1px solid rgb(213, 218, 213);
             float: left;
-            width: 14%;
+            width: 15%;
             padding: 0px 10px 0px 10px;
+            margin: 4px 0px;
         }
 
         .date {
@@ -23,7 +25,6 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 24px;
-            width: 100%;
         }
 
         h1 {
@@ -34,44 +35,12 @@
         }
 
         p {
-            max-width: 100%;
-            margin: 10px 0px 10px 0px;
-
+            padding: 10px 0px 10px 0px;
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+            width: 9em;
         }
 
-
-        @media only screen and (max-width: 1280px) {
-            .articles {
-                width: 50%;
-                border-right: none;
-            }
-            .title {
-                width: 100%;
-
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            .articles {
-                width: 100%;
-                border-right: none;
-            }
-            .title {
-                width: 100%;
-
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            .articles {
-                width: 100%;
-                border-right: none;
-            }
-            .title {
-                width: 80%;
-
-            }
-        }
 
         .news {
             display: flex;
@@ -81,4 +50,30 @@
         .news .articles {
              background-color: white;
          
+        }
+
+        img{
+            width: 11em;
+            height: 11em;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .articles {
+                width: 33%;
+            }
+
+        }
+
+        @media only screen and (max-width: 620px) {
+            .articles {
+                width: 50%;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .articles {
+                width: 100%;
+                border-right: none;
+            }
         }
